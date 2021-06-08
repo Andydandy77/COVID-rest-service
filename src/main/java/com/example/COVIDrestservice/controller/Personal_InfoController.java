@@ -12,14 +12,13 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@EnableCaching
 public class Personal_InfoController {
 
     @Autowired
     private Personal_InfoService service;
 
-    private Map<String, PersonalInformationEntity> personalInformationEntityMap = new HashMap<String, PersonalInformationEntity>();
-    private ArrayList<PersonalInformationEntity> personalInformationEntityList = new ArrayList<PersonalInformationEntity>();
+    private Map<String, PersonalInformationEntity> personalInformationEntityMap = new HashMap<>();
+    private ArrayList<PersonalInformationEntity> personalInformationEntityList = new ArrayList<>();
 
 
     @PostMapping("/addpersonalinfo")
